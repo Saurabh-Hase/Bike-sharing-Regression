@@ -1,5 +1,5 @@
 # Bike-sharing-Regression
-Currently, Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of the bike count required at each hour for the stable supply of rental bikes.
+<b> Problem Description : </b> Currently, Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of the bike count required at each hour for the stable supply of rental bikes.
 
 In this project, our task is to build a predictive model, which could help Rental bike services in predicting the Rental bike count for a particular condition. As this is a supervised machine learning problem to solve we have used various supervised algorithms to find the relationship between the dependent and independent variables.
 
