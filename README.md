@@ -3,12 +3,37 @@
 
 In this project, our task is to build a predictive model, which could help Rental bike services in predicting the Rental bike count for a particular condition. As this is a supervised machine learning problem to solve we have used various supervised algorithms to find the relationship between the dependent and independent variables.
 
-First we stared our project by importing dataset containing weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information. After importing the data the EDA has been performed on the dataset along with data cleaning.
+<b> Data Description: </b>
+The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information.
 
-Further, we used pandas profiling and switviz library to do the Exploratory Data analysis and then also do the data cleaning process, In which we also worked with outliers. Further we used normalisation method to scale the data as the scaling plays imortant part before applying model. We used yeo-johanson normalistion technique as we have some zero values and some negative values in our dataset.
+<b> Steps involved : </b>
+1. Exploratory Data Analysis : Exploratory Data Analysis, EDA for short, is simply a ‘first look at the data’. It forms a critical part of the machine learning workflow and it is at this stage we start to understand the data we are working with and what it contains. In essence, it allows us to make sense of the data before applying advanced analytics and machine learning.
+2. Normalisation : Normalization is generally required when we are dealing with attributes on a different scale, otherwise, it may lead to a dilution in the effectiveness of an important equally important attribute(on a lower scale) because of other attributes having values on a larger scale. For normalisation we used YEO-JOHANSON power  transformation
+3. Correlation : A correlation is a statistical measure of the relationship between two variables. The measure is best used in variables that demonstrate a linear relationship between each other. We checked the correlation using VIF number and  then removed the variable accordingly
+4. One hot encoding for categorical variable : We used One Hot Encoding to produce binary integers of 0 and 1 to encode our categorical features because categorical features that are in string format cannot be understood by the machine and needs to be converted to numerical format
 
-After that we checked the correlation of independent variable with each other as for regression process needs to check the multicolineatity between the variables. After we used one hot encoding to change our catagorical variable into the numerical variable as our machine can not work with string values.
+<b> Machine learning models: </b>
+For modelling we tried various regression algorithms like:
+1.	Linear Regression
+2.	Lasso Regression
+3.	Ridge Regression
+4.	Elastic Net Regression
+5.	Polynomial Regression
+6.	Decision Tree
+7.	Random Forest
+8.	Gradient Boosting
+9.	eXtreme Gradient Boosting
 
-Then, we apply Linear regresssion, Lasso regression, Ridge regression, Elastic net Regression, Ploynmial Regression, Decision Tree Regression, Random Forest, Gradient Boosting and eXtreme Gradient Boosting and evaluate them using Mean Square Error, Root Mean Square Error, R Square and Adjusted R Square.
+<b> Evaluation of models: </b>
+For evaluating the models we used 
+1. Mean square error
+2. Root mean square error
+3. R square
+4. Adjusted R square
 
-Finaly we concluded the highest R Square and Adjusted R Square we got from eXtreme Gradient Boosting model which is 0.85 and 0.85.
+<b> Conclusion: </b>
+With this we have completed our experiments of using different models and evaluating those models with help of different evaluation matrices. We have started from EDA, Normalisation, Checking correlation, One hot encoding, then applying various models like Linear Regression, Lasso Regression, Ridge Regression,  Elastic Net Regression, Polynomial Regression, Decision Tree, Random Forest, Gradient Boosting and eXtreme Gradient Boosting. After that we have evaluate all those model using different evaluation matrices and we found that Xgboost  model giving us best result of R2 and Adjusted R2. 
+Models  	 Mean_square_error	  Root_Mean_square_error	R2	  Adjusted_R2
+Xtreme_GB	 0.22               	0.47	                  0.85	0.85
+
+
