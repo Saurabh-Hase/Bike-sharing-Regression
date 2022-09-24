@@ -35,7 +35,7 @@ For evaluating the models we used
 
 We applied the above all algorithms and completed our experiments by  evaluating those models with help of different evaluation matrices. 
 We have started from EDA, Normalisation, Checking correlation, One hot encoding, then applying various models like Linear Regression, Lasso Regression, Ridge Regression,  Elastic Net Regression, Polynomial Regression, Decision Tree, Random Forest, Gradient Boosting and eXtreme Gradient Boosting. 
-After that we have evaluate all those model using different evaluation matrices and we found that Xgboost model giving us best result of R2 = 0.85  and Adjusted R2= 0.85. 
+After that we have evaluate all those model using different evaluation matrices and we found that Xgboost model giving us best result of R2 = 0.86  and Adjusted R2= 0.86. 
 
 
 
